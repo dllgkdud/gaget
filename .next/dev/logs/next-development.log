@@ -1,0 +1,14 @@
+{"timestamp":"00:00:00.611","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.611","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:00.612","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:00.612","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
+{"timestamp":"00:00:00.612","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.612","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:00.612","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:00.612","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.741","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:09.880","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:37.115","source":"Server","level":"LOG","message":"✓ Compiled in 12ms"}
+{"timestamp":"00:02:23.056","source":"Server","level":"WARN","message":"⚠ ./src/app/globals.css:3:10\nWarning: Parsing CSS source code failed\n  1 | @tailwind base;\n  2 | @tailwind components;\n> 3 | @tailwind utilities;\n    |          ^\n  4 |\n  5 | @layer base {\n  6 |   :root {\n\nUnknown at rule: @tailwind\n\nGenerated code of PostCSS transform of file content of src/app/globals.css:\n./src/app/globals.css:3:10\n  1 | @tailwind base;\n  2 | @tailwind components;\n> 3 | @tailwind utilities;\n    |          ^\n  4 |\n  5 | @layer base {\n  6 |   :root {\n\nImport trace:\n  Client Component Browser:\n    ./src/app/globals.css [Client Component Browser]\n    ./src/app/layout.tsx [Server Component]\n\n"}
+{"timestamp":"00:02:27.201","source":"Server","level":"WARN","message":"⚠ ./src/app/globals.css:3:10\nWarning: Parsing CSS source code failed\n  1 | @tailwind base;\n  2 | @tailwind components;\n> 3 | @tailwind utilities;\n    |          ^\n  4 |\n  5 | @layer base {\n  6 |   :root {\n\nUnknown at rule: @tailwind\n\nGenerated code of PostCSS transform of file content of src/app/globals.css:\n./src/app/globals.css:3:10\n  1 | @tailwind base;\n  2 | @tailwind components;\n> 3 | @tailwind utilities;\n    |          ^\n  4 |\n  5 | @layer base {\n  6 |   :root {\n\nImport trace:\n  Client Component Browser:\n    ./src/app/globals.css [Client Component Browser]\n    ./src/app/layout.tsx [Server Component]\n\n"}
+{"timestamp":"00:05:49.979","source":"Server","level":"LOG","message":"✓ Compiled in 12ms"}

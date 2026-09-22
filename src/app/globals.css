@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+
+  /* 1. iOS 앱 질감을 위한 전역 인터랙션 리셋 */
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    
+    /* 브라우저 상/하단 오버스크롤 바운스 현상 방지 */
+    overscroll-behavior-y: none;
+    
+    /* 앱 UI 모의를 위한 텍스트 드래그 및 길게 누르기 선택 방지 */
+    -webkit-user-select: none;
+    user-select: none;
+    
+    /* 모바일 터치 시 파란색 사각형 하이라이트 잔영 제거 */
+    -webkit-tap-highlight-color: transparent;
+    
+    /* iOS SF Pro 서체 렌더링 가속 및 또렷하게 처리 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 클릭 가능한 요소를 터치할 때의 하이라이트 제거 */
+  button,
+  a,
+  input,
+  div {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  /* 2. 스크롤바 숨김 (앱 화면 스크롤 시 브라우저 스크롤바 노출 방지) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* 3. 블러 유효 효과 (Glassmorphism) */
+  .ui-glass {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(25px) saturate(190%);
+    -webkit-backdrop-filter: blur(25px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .ui-glass-dark {
+    background: rgba(20, 20, 20, 0.65);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* 4. 애니메이션 프레임 드랍(60fps) 방지용 GPU 하드웨어 가속 */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+}
